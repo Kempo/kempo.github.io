@@ -1,0 +1,25 @@
+.container {
+	position: absolute;
+	text-align: center;
+	top: 0%;
+	left: 0;
+	width: 100%;
+	font-family: Georgia;
+}
+img {
+	width: 100%;
+	height: auto;
+	opacity: 0.5;
+}
+.center {
+	position: absolute;
+	left: 0;
+	top: 0%;
+	width: 100%;
+	text-align: center;
+	font-size: 200px;
+}
+h1 {
+	font-size: 700%;
+	color: black;
+}
