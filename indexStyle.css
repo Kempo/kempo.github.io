@@ -23,3 +23,41 @@ h1 {
 	font-size: 700%;
 	color: black;
 }
+
+
+
+/* sets the color, position, and style for the box*/
+#navigationBar {
+	position: fixed; 
+	top: 0; 
+	width: 100%; 
+	background-color: rgba(0,0,0,0.5); 
+	list-style-type: none; 
+	text-align: center; 
+	box-shadow: 0px 0px 15px 0px;}
+
+#navigationBar li {
+	display: inline-block; 
+	color: white; 
+	float: center; /* not sure if needed*/
+}
+
+#navigationBar a {
+	font-family: Georgia; 
+	color: white; 
+	border-radius: 0px; 
+	padding: 0px; 
+	text-decoration: none; 
+	font-weight: normal; 
+}
+
+#navigationBar a:hover {
+	/* the first two values dictate how far away the shadow is from the letter*/
+	text-shadow: 0px 0px 10px white;
+}
+
+
+
+
+
+
