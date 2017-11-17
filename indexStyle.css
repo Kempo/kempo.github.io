@@ -6,10 +6,13 @@
 	width: 100%;
 	font-family: Georgia;
 }
+
 #title {
 	font-size: 600%;
 	color: black;
+
 }
+
 #title a {
 	font-family: Georgia; 
 	color: black; 
@@ -24,6 +27,17 @@
 
 body {
 	background-image: url("wallpaper.jpg");
+}
+
+#aboutSection {
+	
+	margin: 0 auto; /* centers the section*/
+	text-align: center;
+	width: 75%;
+	background-color: black;
+	opacity: .25;
+	margin-top: 100px;
+	color: white;
 }
 
 
@@ -44,7 +58,6 @@ body {
 	float: center;
 	font-size: 150%;
 	text-transform: lowercase;
-	
 }
 
 #navigationBar a {
