@@ -4,17 +4,23 @@
 	top: 0%;
 	left: 0;
 	width: 100%;
-	font-family: Georgia;
+	font-family: Raleway;
+}
+@font-face {
+    font-family: "Raleway";
+	src: url('fonts/raleway_thin-webfont.ttf') format("truetype");
 }
 
 #title {
-	font-size: 600%;
 	color: black;
-
+	height: 80vh;
+	width: 100vh;
+	margin: 0 auto;
+	font-size: 13vh; /* vh is according to viewport */
 }
 
 #title a {
-	font-family: Georgia; 
+	font-family: Raleway; 
 	color: black; 
 	border-radius: 0px; 
 	padding: 0px; 
@@ -22,22 +28,40 @@
 	font-weight: normal; 
 }
 #title a:hover {
-	text-shadow: 0px 0px 5px black;
+	text-shadow: 0px 0px 1px black;
 }
 
 body {
-	background-image: url("wallpaper.jpg");
+	background-color: #cbf2d8;
+}
+
+section {
+	margin: 0 auto;
+}
+#projectsSection {
+	
 }
 
 #aboutSection {
-	
-	margin: 0 auto; /* centers the section*/
 	text-align: center;
-	width: 75%;
+	width: 100%;
 	background-color: black;
-	opacity: .25;
+	opacity: .5;
 	margin-top: 100px;
+	color: black;
+	padding-bottom: 500px;
+}
+
+#aboutSection p {
+	font-size: 300%;
+	font-family: Raleway;
 	color: white;
+}
+
+#aboutSection h1 {
+	font-size: 500%;
+	font-family:Raleway;
+	color:white;
 }
 
 
@@ -46,7 +70,7 @@ body {
 	position: fixed; 
 	top: 0; 
 	width: 100%;
-	background-color: rgba(0,0,0,0.5); 
+	background-color: rgba(255, 255, 255, 1); 
 	list-style-type: none; 
 	text-align: center; 
 	box-shadow: 0px 0px 15px 0px;
@@ -61,8 +85,8 @@ body {
 }
 
 #navigationBar a {
-	font-family: Georgia; 
-	color: white; 
+	font-family: Raleway; 
+	color: black; 
 	border-radius: 0px; 
 	padding: 0px; 
 	text-decoration: none; 
@@ -71,7 +95,7 @@ body {
 
 #navigationBar a:hover {
 	/* the first two values dictate how far away the shadow is from the letter*/
-	text-shadow: 0px 0px 10px white;
+	text-shadow: 0px 0px 25px black;
 }
 
 
