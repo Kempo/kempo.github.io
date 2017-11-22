@@ -18,7 +18,9 @@ h1 {
 p {
 	margin: 0px;
 }
-
+#title {
+	height: 80vh;
+}
 #title h1 {
 	color: black;
     height: 30vh;
@@ -31,7 +33,7 @@ p {
 }
 
 body {
-	background-color: #ffe2bc;
+	background-color: antiquewhite;
 }
 
 section {
