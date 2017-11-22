@@ -13,17 +13,18 @@
 
 h1 {
 	margin: 0px;
+	font-weight: normal;
 }
 p {
 	margin: 0px;
 }
 
-#title {
+#title h1 {
 	color: black;
-    opacity: .5;
     height: 30vh;
     margin: 0 auto;
     font-size: 10vh;
+	font-weight: normal;
     text-decoration: none;
     margin-top: 20vh;
     margin-bottom: 20vh;
