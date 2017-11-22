@@ -17,25 +17,16 @@ h1 {
 p {
 	margin: 0px;
 }
+
 #title {
 	color: black;
-	opacity: .5;
-	height: 80vh;
-	margin: 0 auto;
-	font-size: 13vh; /* vh is according to viewport */
-	text-decoration: none;
-}
-
-#title a {
-	font-family: Raleway; 
-	color: black; 
-	border-radius: 0px; 
-	padding: 0px; 
-	text-decoration: none; 
-	font-weight: normal; 
-}
-#title a:hover {
-	text-shadow: 0px 0px 1px black;
+    opacity: .5;
+    height: 30vh;
+    margin: 0 auto;
+    font-size: 10vh;
+    text-decoration: none;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
 }
 
 body {
@@ -61,8 +52,6 @@ section {
 #aboutSection {
 	text-align: center;
 	background-color: #f9c3b6;
-	opacity: 1;
-	color: black;
 }
 
 #aboutSection p {
