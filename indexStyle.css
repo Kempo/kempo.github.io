@@ -19,17 +19,15 @@ p {
 	margin: 0px;
 }
 #title {
-	height: 80vh;
+	height: 70vh;
 }
 #title h1 {
 	color: black;
-    height: 30vh;
-    margin: 0 auto;
-    font-size: 10vh;
+    	margin: 0 auto;
+    	font-size: 10vh;
 	font-weight: normal;
-    text-decoration: none;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
+    	text-decoration: none;
+    	margin-top: 30vh;
 }
 
 body {
