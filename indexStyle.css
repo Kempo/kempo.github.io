@@ -101,6 +101,10 @@ section {
 	text-transform: lowercase;
 }
 
+#navigationBar ul {
+	-webkit-padding-start: 0px;
+}
+
 #navigationBar a {
 	font-family: Raleway; 
 	color: black; 
