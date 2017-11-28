@@ -8,6 +8,7 @@
 
 #homeBar {
 	margin: 0px;
+	text-align: center;
 }
 
 #homeBar li {
@@ -15,7 +16,8 @@
     list-style-type: none;
     font-family: Raleway;
     text-align: left;
-    font-size: 3vh;
+    font-size: 5vh;
+	text-align: center;
 }
 
 #homeBar ul {
@@ -29,7 +31,8 @@
 }
 
 #homeBar a:hover {
-	text-shadow: 0px 0px 25px black;
+	font-size: 5.2vh;
+	color: red;
 }
 
 @font-face {
@@ -65,7 +68,8 @@ p {
 }
 
 #information a:hover {
-	text-shadow: 0px 0px 25px black;
+	font-size: 6vh;
+	color: red;
 }
 
 #title h1 {
