@@ -89,18 +89,23 @@ body {
 }
 
 section {
+	font-family: Raleway;
 	margin: 0 auto;
 	width: 100vh;
 	height: 100vh;
 }
-#projectsSection {
-	background-color: #87ddbe;
+
+#projectsSection dl {
+	font-size: 4vh;
+}
+#projectsSection img {
+	width: 300px;
+	height: 300px;
 }
 
-#projectsSection h1 {
-	font-size: 10vh;
-	font-family:Raleway;
-	color: black;
+#projectsSection dd {
+	margin: 0px;
+	font-size: 3vh;
 }
 
 #aboutSection {
@@ -114,19 +119,6 @@ section {
 	font-size: 5vh;
 }
 
-#contactSection {
-	color: white;
-	background-color: #e8917f;
-	height: auto;
-}
-
-#contactSection h1 {
-	font-size: 10vh;
-}
-
-#contactSection p {
-	font-size: 5vh;
-}
 
 
 
