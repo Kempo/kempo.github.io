@@ -98,6 +98,7 @@ section {
 #projectsSection dl {
 	font-size: 4vh;
 }
+
 #projectsSection img {
 	width: 300px;
 	height: 300px;
@@ -106,6 +107,10 @@ section {
 #projectsSection dd {
 	margin: 0px;
 	font-size: 3vh;
+}
+
+#projectsSection dt {
+	
 }
 
 #aboutSection {
@@ -117,6 +122,8 @@ section {
 
 #aboutSection p {
 	font-size: 5vh;
+	padding-left: 10vh;
+    padding-right: 10vh;
 }
 
 
