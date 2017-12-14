@@ -34,7 +34,7 @@
 
 #homeBar a:hover {
 	font-size: 10.1vh;
-	color: red;
+	color: black;
 }
 
 @font-face {
@@ -84,6 +84,11 @@ p {
 }
 
 body {
+	background: white;
+	margin: 0px;
+}
+
+#main-body {
 	margin: 0px;
 	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 	background-size: 400% 400%;
@@ -91,7 +96,6 @@ body {
 	-moz-animation: Gradient 25s ease infinite;
 	animation: Gradient 25s ease infinite;
 }
-
 
 @-webkit-keyframes Gradient {
 	0% {
