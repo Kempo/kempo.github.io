@@ -5,11 +5,23 @@
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" href="styles.css">
 	<title> Aaron Chen </title>
+	<script>
+	var toggle = false;
+	function reveal() {
+	toggle = !toggle;
+	if(toggle) {
+			document.getElementById("load").style.visibility = "visible";
+	}
+	}
+	
+	</script>
 </head>
-
 <style>
-
+	#load {
+		visibility: hidden;
+	}
 </style>
+
 
 <body>
 <div id="homeBar"> 
@@ -19,8 +31,11 @@
 </div>
 
 <div class="container">
-	
+	<div id="load">
+		<img src="misc\loading.gif" height="100px" width="100px">
+	</div>
+	<button type="button" onclick="reveal()"> click me! </button>
 </div>
 </body>
-
 </html>
+
