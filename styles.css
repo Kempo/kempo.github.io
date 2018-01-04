@@ -1,167 +1,32 @@
-.container {
-	text-align: center;
-	top: 0%;
-	left: 0;
-	width: 100%;
-	font-family: Raleway;
+.main-body {
+  text-align: center;
+  font-family: Raleway;
+  margin: 0;
 }
-#homeBar {
-	margin: 0px;
-	text-align: center;
-	box-shadow: 0px 0px 5px black;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-}
-
-#homeBar li {
-	color: white;
-    list-style-type: none;
-    font-family: Raleway;
-    text-align: left;
-    font-size: 10vh;
-	text-align: center;
-}
-
-#homeBar ul {
-	margin: 0;
-    -webkit-padding-start: 10px;
-}
-
-#homeBar a {
-	text-decoration: none;
-	color: black;
-}
-
-#homeBar a:hover {
-	font-size: 10.3vh;
-	color: black;
-}
-
 @font-face {
-    font-family: "Raleway";
+  font-family: "Raleway";
 	src: url('fonts/raleway_thin-webfont.ttf') format("truetype");
 }
-
-h1 {
-	margin: 0px;
-	font-weight: normal;
+#centerpiece {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background: #CCC;
+  min-width: 10vh;
+  border-radius: 4vh;
+  height: 40vh;
 }
-
-p {
-	margin: 0px;
+#title h {
+  font-size: 5vh;
+  text-transform: lowercase;
 }
-
-#information {
-	height:100vh;
+#title p {
+    text-transform: lowercase;
+    font-size: 3vh;
+    letter-spacing: 3px;
+    margin: 4vh;
 }
-
-#information li {
-	list-style-type: none;
-	text-align: center;
-	text-transform: lowercase;
-	font-family: Raleway;
-	color: black;
-	font-size: 5vh;
-}
-
-#information ul {
-	-webkit-padding-start: 0px;
-}
-
-#information a {
-	text-decoration: none;
-	color: black;
-}
-
-#information a:hover {
-	font-size: 6vh;
-	color: white;
-}
-
-#title h1 {
-	color: black;
-    margin: 0 auto;
-    font-size: 10vh;
-    font-weight: normal;
-    text-decoration: none;
-    margin-top: 20vh;
-}
-
-body {
-	background: white;
-	margin: 0px;
-}
-
-#main-body {
-	margin: 0px;
-	background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
-	background-size: 400% 400%;
-	-webkit-animation: Gradient 25s ease infinite;
-	-moz-animation: Gradient 25s ease infinite;
-	animation: Gradient 25s ease infinite;
-}
-
-@-webkit-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@-moz-keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-@keyframes Gradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
-}
-
-section {
-	font-family: Raleway;
-	margin: 0 auto;
-	width: 100vh;
-	height: 100vh;
-}
-
-#projectsSection dl {
-	font-size: 4vh;
-	color: black;
-	background-color: #DAC5F2;
-}
-
-#projectsSection img {
-	width: 300px;
-	height: 300px;
-}
-
-#aboutSection iframe {
-	height: 100vh;
-}
-
-
-
-
 
 
 
