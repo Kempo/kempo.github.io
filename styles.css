@@ -16,10 +16,10 @@
 
 #centerpiece {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: rgba(97, 98, 99, .5);
+    background-color: rgba(0, 0, 0, .5);
     min-width: 50vh;
     border-radius: 4px;
     padding: 3vh;
