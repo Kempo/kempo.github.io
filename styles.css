@@ -19,20 +19,19 @@
     top: 35%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    background-color: rgba(0, 0, 0, .5);
-    min-width: 50vh;
+    min-width: 80vh;
     border-radius: 4px;
     padding: 3vh;
     cursor: default;
     color: white;
 }
 #title h {
-  font-size: 5vh;
+  font-size: 6vh;
   text-transform: uppercase;
 }
 #title p {
     text-transform: lowercase;
-    font-size: 2.5vh;
+    font-size: 3vh;
     letter-spacing: 3px;
     margin: 0px;
     padding-bottom: 20px;
@@ -52,16 +51,19 @@
 
 li {
   padding: 5px;
-  font-size: 2.5vh;
+  font-size: 3vh;
 }
 
 li a {
   text-decoration: none;
   color: white;
+	-webkit-transition: 600ms all;
+    -moz-transition: 600ms all;
+    transition: 600ms all;
 }
 li a:hover {
-  font-size: 2.6vh;
-  color: red;
+  font-size: 3vh;
+  color: green;
 }
 
 .credits-bar {
