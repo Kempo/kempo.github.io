@@ -2,10 +2,7 @@
   text-align: center;
   font-family: Raleway;
   margin: 0;
-  background-image: url(background.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: white;
   height: 100vh;
 }
 
@@ -23,7 +20,7 @@
     border-radius: 4px;
     padding: 3vh;
     cursor: default;
-    color: white;
+    color: black;
 }
 #title h {
   font-size: 6vh;
@@ -37,7 +34,7 @@
     padding-bottom: 20px;
 }
 #personalpic {
-    border-radius: 100px;
+    border-radius: 4px;
     height: 300px;
     margin-top: 10px;
 }
@@ -56,7 +53,7 @@ li {
 
 li a {
   text-decoration: none;
-  color: white;
+  color: black;
 	-webkit-transition: 600ms all;
     -moz-transition: 600ms all;
     transition: 600ms all;
