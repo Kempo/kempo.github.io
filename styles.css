@@ -7,24 +7,33 @@
 
 #centerpiece {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    border-radius: 4px;
-    padding: 3vh;
     cursor: default;
     color: black;
 }
-#title h {
+
+#header h {
   font-size: 50px;
 }
-#title p {
+
+#header p {
     font-size: 50px;
     margin: 0px;
     padding-bottom: 20px;
     text-align: left;
 }
 
+
+#title {
+  color: red;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  -webkit-transition: 600ms all;
+  -moz-transition: 600ms all;
+  transition: 600ms all;
+}
 #nav {
     list-style-type: none;
     padding: 0;
@@ -45,7 +54,7 @@ li a {
     transition: 400ms all;
 }
 li a:hover {
-  color: red;
+  color: green;
 }
 
 a {
