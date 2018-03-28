@@ -15,11 +15,11 @@
 }
 
 #header h {
-  font-size: 50px;
+  font-size: 3vw;
 }
 
 #header p {
-    font-size: 50px;
+    font-size: 3vw;
     margin: 0px;
     padding-bottom: 20px;
     text-align: left;
@@ -30,9 +30,6 @@
   color: red;
   border-bottom-style: solid;
   border-bottom-color: black;
-  -webkit-transition: 600ms all;
-  -moz-transition: 600ms all;
-  transition: 600ms all;
 }
 #nav {
     list-style-type: none;
@@ -43,7 +40,7 @@
 
 li {
   padding-right: 10px;
-  font-size: 30px;
+  font-size: 2.5vw;
 }
 
 li a {
@@ -54,10 +51,5 @@ li a {
     transition: 400ms all;
 }
 li a:hover {
-  color: green;
-}
-
-a {
-  text-decoration: none;
-  color: grey;
+  color: red;
 }
