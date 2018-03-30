@@ -1,3 +1,33 @@
+@media screen and (max-width: 500px) {
+  #header h {
+    font-size: 30px;
+  }
+  #header p {
+    font-size: 30px;
+  }
+
+  #header {
+    width: 80vw;
+  }
+
+  #nav li {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #header h {
+    font-size: 3vw;
+  }
+  #header p {
+    font-size: 3vw;
+  }
+
+  #nav li {
+    font-size: 2.5vw;
+  }
+}
+
 .main-body {
   text-align: left;
   font-family: 'Playfair Display', sans-serif;
@@ -14,12 +44,7 @@
     color: black;
 }
 
-#header h {
-  font-size: 3vw;
-}
-
 #header p {
-    font-size: 3vw;
     margin: 0px;
     padding-bottom: 20px;
     text-align: left;
@@ -38,18 +63,17 @@
     margin: 0;
 }
 
-li {
+footer li {
   padding-right: 10px;
-  font-size: 2.5vw;
 }
 
-li a {
+footer li a {
   text-decoration: none;
   color: black;
 	-webkit-transition: 400ms all;
     -moz-transition: 400ms all;
     transition: 400ms all;
 }
-li a:hover {
+footer li a:hover {
   color: red;
 }

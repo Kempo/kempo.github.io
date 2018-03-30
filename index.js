@@ -4,7 +4,7 @@ let index = 0;
 const t = ["high schooler", "pet lover", "food enthusiast", "basketball player", "programmer"];
 
 $(document).ready(function() {
-	var interval = window.setInterval(transitionTitles, 5000);
+	var interval = window.setInterval(transitionTitles, 3000);
 });
 
 function transitionTitles() {
@@ -24,21 +24,8 @@ function setTitle(title) {
 
 	$("#title").animate({"opacity": 0}, 500, function() {
 		$("#title").css("color", randomColor({
-		luminosity: 'dark'	
+		luminosity: 'bright'	
 		}));
 		$(this).text(title).animate({"opacity": 1}, 500);
 	})
 }
-
-/** 
-function randomColor(brightness){
-  	function randomChannel(brightness){
-   	 	var r = 255-brightness;
-    	var n = 0|((Math.random() * r) + brightness);
-    	var s = n.toString(16);
-    	return (s.length==1) ? '0'+ s : s;
-  	}
-
-  return '#' + randomChannel(brightness) + randomChannel(brightness) + randomChannel(brightness);
-}
-**/
