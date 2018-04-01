@@ -1,21 +1,22 @@
 /** random color library: https://github.com/davidmerfield/randomColor **/
 
-let index = 0;
+let titleIndex = 0;
 const t = ["high schooler", "pet lover", "food enthusiast", "basketball player", "programmer"];
 
 $(document).ready(function() {
+	generateBackground();
 	var interval = window.setInterval(transitionTitles, 3000);
 });
 
 function transitionTitles() {
-	const newTitle = t[index];
+	const newTitle = t[titleIndex];
 
 	setTitle(newTitle);
 	const lastItem = t.length - 1;
-	if(index != lastItem) {
-		index += 1;
-	}else if(index == lastItem) {
-		index = 0;
+	if(titleIndex != lastItem) {
+		titleIndex += 1;
+	}else if(titleIndex == lastItem) {
+		titleIndex = 0;
 	}
 }
 
@@ -24,8 +25,16 @@ function setTitle(title) {
 
 	$("#title").animate({"opacity": 0}, 500, function() {
 		$("#title").css("color", randomColor({
-		luminosity: 'bright'	
+		luminosity: 'dark'	
 		}));
 		$(this).text(title).animate({"opacity": 1}, 500);
 	})
+}
+
+function generateBackground() {
+	$(".main-body").css("background-color", randomColor({
+		luminosity: 'light',
+		format: 'rgba',
+		alpha: 0.2
+	}));
 }
