@@ -4,9 +4,15 @@ let titleIndex = 0;
 const t = ["high schooler", "pet lover", "food enthusiast", "basketball player", "programmer"];
 
 $(document).ready(function() {
+	window.setTimeout(hideLoading, 3000);
+	window.setInterval(transitionTitles, 3000);
 	generateBackground();
-	var interval = window.setInterval(transitionTitles, 3000);
+
 });
+
+function hideLoading() {
+	$("#load").animate({"opacity": 0}, "fast");
+}
 
 function transitionTitles() {
 	const newTitle = t[titleIndex];
@@ -35,6 +41,6 @@ function generateBackground() {
 	$(".main-body").css("background-color", randomColor({
 		luminosity: 'light',
 		format: 'rgba',
-		alpha: 0.2
+		alpha: 0.1
 	}));
 }
