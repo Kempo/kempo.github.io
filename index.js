@@ -1,13 +1,17 @@
 /** random color library: https://github.com/davidmerfield/randomColor **/
 
 let titleIndex = 0;
-const t = ["high schooler", "pet lover", "foodie", "basketball player", "programmer"];
+const t = ["student", "pet lover", "foodie", "basketball player", "programmer", "movie enthusiast"];
 
 $(document).ready(function() {
 	setWidth();
 	window.setTimeout(hideLoading, 3000);
 	window.setInterval(transitionTitles, 3000);
 	window.setInterval(generateBackground, 3000);
+});
+
+$(window).resize(function() {
+	setWidth();
 });
 
 function setWidth() {
@@ -48,7 +52,7 @@ function setTitle(title) {
 
 	$("#title").animate({"opacity": 0}, 500, function() {
 		$("#title").css("color", randomColor({
-		luminosity: 'dark'	
+		luminosity: 'dark'
 		}));
 		$(this).text(title).animate({"opacity": 1}, 500);
 	})

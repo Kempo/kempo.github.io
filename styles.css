@@ -55,9 +55,9 @@
   font-family: 'Playfair Display', sans-serif;
   margin: 0;
   background-color: white;
-  -webkit-transition: 5000ms all;
-  -moz-transition: 5000ms all;
-  transition: 5000ms all;
+  -webkit-transition: 500ms all;
+  -moz-transition: 500ms all;
+  transition: 500ms all;
 }
 
 #header p {
