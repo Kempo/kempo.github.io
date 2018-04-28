@@ -1,13 +1,13 @@
 @media screen and (max-width: 500px) {
   #header h {
-    font-size: 30px;
+    font-size: 60px;
   }
   #header p {
-    font-size: 30px;
+    font-size: 60px;
   }
 
   #nav li {
-    font-size: 30px;
+    font-size: 60px;
   }
   #centerpiece {
     text-align: center;
@@ -17,6 +17,9 @@
   }
   body {
     height: 100vh;
+  }
+  #ruler {
+    font-size: 60px;
   }
 }
 
@@ -40,6 +43,10 @@
     cursor: default;
     color: black;
     text-align: left;
+  }
+
+  #ruler {
+    font-size: 5vw;
   }
 }
 
@@ -74,6 +81,15 @@
 
 #load {
   height: 3vh;
+}
+
+#ruler {
+    font-family: 'Playfair Display', sans-serif;
+    position: absolute;
+    visibility: hidden;
+    height: auto;
+    width: auto;
+    white-space: nowrap; /* Thanks to Herb Caudill comment */
 }
 
 footer li {
