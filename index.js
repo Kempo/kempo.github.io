@@ -1,14 +1,31 @@
 /** random color library: https://github.com/davidmerfield/randomColor **/
 
 let titleIndex = 0;
-const t = ["high schooler", "pet lover", "food enthusiast", "basketball player", "programmer"];
+const t = ["high schooler", "pet lover", "foodie", "basketball player", "programmer"];
 
 $(document).ready(function() {
+	setWidth();
 	window.setTimeout(hideLoading, 3000);
 	window.setInterval(transitionTitles, 3000);
-	generateBackground();
-
+	window.setInterval(generateBackground, 3000);
 });
+
+function setWidth() {
+	let maxWidth = 0;
+	t.forEach(function(title) {
+		let textLength = ("I am a " + title + ".");
+		$("#ruler").text(textLength);
+		let width = $("#ruler").outerWidth();
+		console.log("width= " + width);
+		if(width > maxWidth) {
+			maxWidth = width;
+		}
+	});
+	if(maxWidth > 0) {
+		$("#centerpiece").css("width", (maxWidth + 5));
+	}
+	console.log("max length= " + maxWidth);
+}
 
 function hideLoading() {
 	$("#load").animate({"opacity": 0}, "fast");
