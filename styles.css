@@ -79,8 +79,15 @@
     margin: 0;
 }
 
-#load {
-  height: 3vh;
+#loading {
+  height: 3px;
+  background-color: black;
+  width: 0px;
+  border-radius: 4px;
+  margin-left: 2px;
+  -webkit-transition: 100ms all;
+  -moz-transition: 100ms all;
+  transition: 100ms all;
 }
 
 #ruler {

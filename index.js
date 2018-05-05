@@ -4,14 +4,16 @@ let titleIndex = 0;
 const t = ["student", "pet lover", "foodie", "basketball player", "programmer", "movie enthusiast"];
 
 $(document).ready(function() {
-	setWidth();
-	window.setTimeout(hideLoading, 3000);
+	if(isMobileDevice()) {
+		setWidth();
+	}
+	startLoading();
 	window.setInterval(transitionTitles, 3000);
 	window.setInterval(generateBackground, 3000);
 });
 
 $(window).resize(function() {
-	setWidth();
+	setWidth(); // not called on a mobile device
 });
 
 function setWidth() {
@@ -31,8 +33,11 @@ function setWidth() {
 	console.log("max length= " + maxWidth);
 }
 
-function hideLoading() {
-	$("#load").animate({"opacity": 0}, "fast");
+function startLoading() {
+	$("#loading").animate({"width": 100}, 3000, function() {
+		$("#loading").css("background-color", "green");
+		$("#loading").animate({"opacity": 0}, 1000);
+	});
 }
 
 function transitionTitles() {
@@ -52,11 +57,17 @@ function setTitle(title) {
 
 	$("#title").animate({"opacity": 0}, 500, function() {
 		$("#title").css("color", randomColor({
-		luminosity: 'dark'
+			luminosity: 'dark',
+			format: 'rgba',
+			alpha: 1.0
 		}));
 		$(this).text(title).animate({"opacity": 1}, 500);
 	})
 }
+
+function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
 
 function generateBackground() {
 	$(".main-body").css("background-color", randomColor({
