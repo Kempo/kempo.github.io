@@ -4,9 +4,7 @@ let titleIndex = 0;
 const t = ["student", "pet lover", "foodie", "basketball player", "programmer", "movie enthusiast"];
 
 $(document).ready(function() {
-	if(isMobileDevice()) {
-		setWidth();
-	}
+	setWidth();
 	startLoading();
 	window.setInterval(transitionTitles, 3000);
 	window.setInterval(generateBackground, 3000);
@@ -28,7 +26,7 @@ function setWidth() {
 		}
 	});
 	if(maxWidth > 0) {
-		$("#centerpiece").css("width", (maxWidth + 5));
+		$("#centerpiece").css("width", (maxWidth + 10));
 	}
 	console.log("max length= " + maxWidth);
 }
