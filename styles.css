@@ -1,13 +1,13 @@
 @media screen and (max-width: 500px) {
   #header h {
-    font-size: 60px;
+    font-size: 30px;
   }
   #header p {
-    font-size: 60px;
+    font-size: 30px;
   }
 
   #nav li {
-    font-size: 60px;
+    font-size: 30px;
   }
   #centerpiece {
     text-align: center;
@@ -19,7 +19,7 @@
     height: 100vh;
   }
   #ruler {
-    font-size: 60px;
+    font-size: 30px;
   }
 }
 

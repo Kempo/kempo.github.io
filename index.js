@@ -1,7 +1,7 @@
 /** random color library: https://github.com/davidmerfield/randomColor **/
 
 let titleIndex = 0;
-const t = ["student", "pet lover", "foodie", "basketball player", "programmer", "movie enthusiast"];
+const t = ["student", "dog lover", "foodie", "basketball player", "programmer", "movie watcher", "dreamer"];
 
 $(document).ready(function() {
 	setWidth();
@@ -20,22 +20,22 @@ function setWidth() {
 		let textLength = ("I am a " + title + ".");
 		$("#ruler").text(textLength);
 		let width = $("#ruler").outerWidth();
-		console.log("width= " + width);
 		if(width > maxWidth) {
 			maxWidth = width;
 		}
 	});
-	if(maxWidth > 0) {
+	if(maxWidth > 0 && !isMobileDevice()) { // set the width only if it isn't on mobile.
 		$("#centerpiece").css("width", (maxWidth + 10));
+		console.log("max length= " + maxWidth);
 	}
-	console.log("max length= " + maxWidth);
 }
 
 function startLoading() {
-	$("#loading").animate({"width": 100}, 3000, function() {
-		$("#loading").css("background-color", "green");
-		$("#loading").animate({"opacity": 0}, 1000);
-	});
+	if(!isMobileDevice()) {
+		$("#loading").animate({"width": 100}, 3000, function() {
+			$("#loading").css("background-color", "green");
+		});
+	}
 }
 
 function transitionTitles() {
@@ -64,7 +64,7 @@ function setTitle(title) {
 }
 
 function isMobileDevice() {
-    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    return (typeof window.orientation !== "undefined") || /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent);
 };
 
 function generateBackground() {
