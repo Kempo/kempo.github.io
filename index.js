@@ -7,7 +7,7 @@ $(document).ready(function() {
 	setWidth();
 	startLoading();
 	window.setInterval(transitionTitles, 3000);
-	window.setInterval(generateBackground, 3000);
+	//window.setInterval(generateBackground, 3000);
 });
 
 $(window).resize(function() {
@@ -34,6 +34,7 @@ function startLoading() {
 	if(!isMobileDevice()) {
 		$("#loading").animate({"width": 100}, 3000, function() {
 			$("#loading").css("background-color", "green");
+			$("#loading").animate({"width": 0}, 1000);
 		});
 	}
 }
