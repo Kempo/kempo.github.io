@@ -1,7 +1,15 @@
 /** random color library: https://github.com/davidmerfield/randomColor **/
 
 let titleIndex = 0;
-const t = ["student", "dog lover", "foodie", "basketball player", "programmer", "movie watcher", "dreamer"];
+const t = ["student", 
+		"dog lover", 
+		"foodie", 
+		"basketball player", 
+		"programmer", 
+		"movie watcher", 
+		"dreamer",
+		"reader",
+		"brother"];
 
 $(document).ready(function() {
 	setWidth();
